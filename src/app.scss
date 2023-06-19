@@ -12,10 +12,14 @@ body {
         margin: 50px auto;
         padding: 0 15px;
 
-       
         
-        form {
-            div.items, form {
+        .container {
+            max-width: 400px;
+            width: 100%;
+            margin: auto;
+            
+            div.items, 
+            form {
                 box-shadow: 0 .5rem 1rem #00000026 !important;
                 padding: 10px;
                 background-color: #fff;
@@ -39,9 +43,8 @@ body {
                 color: #ccc !important;
                 font-size: 20px !important;
             }
-        }
 
-        .items{
+            .items{
             h2 {
                 text-align: center;
                 margin: 10px 0 25px 0;
@@ -90,11 +93,6 @@ body {
             }
         }
         
-        .container {
-            max-width: 400px;
-            width: 100%;
-            margin: auto;
-
             button {
                 appearance: button;
                 background-color: #0f633c;
@@ -129,7 +127,7 @@ body {
 
             button:after {
                 background-clip: padding-box;
-                background-color: #198754;
+                // background-color: #198754;
                 border: solid transparent;
                 border-radius: 16px;
                 border-width: 0 0 4px;
@@ -140,6 +138,14 @@ body {
                 right: 0;
                 top: 0;
                 z-index: -1;
+            }
+
+            .orange {
+                background-color: orange !important;
+
+                :after {
+                    background-color: orange;
+                }
             }
 
             button:main,
